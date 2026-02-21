@@ -1,0 +1,51 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  
+</ion-header>
+
+<ion-content [fullscreen]="true" class="custom-bg">
+  <div class="header-container">
+    <h2 class="main-title">Daily Progress</h2>
+    
+    <div class="stats-card">
+      <div class="stat-item">
+        <span class="stat-value">3/5</span>
+        <span class="stat-label">Exercises</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-value">12</span>
+        <span class="stat-label">Minutes</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">
+    <h3>Today's Plan</h3>
+  </div>
+
+  <div class="exercise-list">
+    <div class="exercise-card done">
+      <div class="exercise-info">
+        <h4>Neck Stretch</h4>
+        <p>3 Sets x 10 Reps</p>
+      </div>
+      <ion-icon name="checkmark-circle" class="status-icon"></ion-icon>
+    </div>
+
+    <div class="exercise-card active">
+      <div class="exercise-info">
+        <h4>Shoulder Rotation</h4>
+        <p>2 Sets x 15 Reps</p>
+      </div>
+      <ion-icon name="play-circle" class="status-icon"></ion-icon>
+    </div>
+
+    <div class="exercise-card pending">
+      <div class="exercise-info">
+        <h4>Back Alignment</h4>
+        <p>5 Minutes</p>
+      </div>
+      <ion-icon name="ellipse-outline" class="status-icon"></ion-icon>
+    </div>
+  </div>
+</ion-content>

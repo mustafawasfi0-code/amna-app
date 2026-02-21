@@ -1,0 +1,90 @@
+.custom-bg {
+  --background: #f8faff;
+}
+
+.auth-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  padding: 40px 30px;
+}
+
+.hero-section {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .circle-bg {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: #eef6f6; // درجة فاتحة جداً من الـ Teal
+    border-radius: 40px;
+    transform: rotate(15deg);
+    z-index: -1;
+  }
+
+  .welcome-icon {
+    font-size: 80px;
+    color: #407676; // نفس اللون اللي بتاب 2
+  }
+}
+
+.text-section {
+  text-align: center;
+  margin-bottom: 60px;
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1a3a5a;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.5;
+  }
+}
+
+.action-buttons {
+  width: 100%;
+  
+  ion-button {
+    --border-radius: 20px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    --box-shadow: none;
+  }
+
+  .login-btn {
+    --background: #407676; // اللون الموحد اللي طلبته
+    --color: white;
+  }
+
+  .signup-btn {
+    --color: #407676;
+    --border-color: #407676;
+    --border-width: 2px;
+  }
+}
+
+.footer-text {
+  margin-top: 30px;
+  p {
+    font-size: 0.85rem;
+    color: #bdc3c7;
+    span {
+      color: #407676;
+      font-weight: 600;
+    }
+  }
+}

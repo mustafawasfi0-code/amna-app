@@ -1,0 +1,67 @@
+<ion-header [translucent]="true" class="ion-no-border">
+</ion-header>
+
+<ion-content [fullscreen]="true" [scrollEvents]="true" class="custom-bg">
+  
+  <div class="header-wrapper">
+    <div class="profile-section">
+      <div class="avatar-outer-glow">
+        <div class="avatar-white-border">
+          <img src="assets/amna.png" alt="Dr Amna">
+        </div>
+      </div>
+      
+      <div class="text-info">
+        <h3>Dr. Amna Dagher Mohammed</h3>
+        <p>Medical Practitioner</p>
+      </div>
+    </div>
+
+    <div class="welcome-banner">
+      <h2>WHERE DOES IT HURT?</h2>
+      <p>Tap on the area that needs some care</p>
+    </div>
+  </div>
+
+  <div class="anatomy-grid">
+    <div class="grid-card bg-green" (click)="goToExercises('neck')">
+      <img src="assets/Gifs/neck.gif" class="medical-gif">
+      <span>NECK</span>
+    </div>
+
+    <div class="grid-card bg-white" (click)="goToExercises('shoulder')">
+      <img src="assets/Gifs/shoulder.gif" class="medical-gif">
+      <span>SHOULDERS</span>
+    </div>
+
+    <div class="grid-card bg-blue" (click)="goToExercises('back')">
+      <img src="assets/Gifs/back-pain.gif" class="medical-gif">
+      <span>BACK</span>
+    </div>
+
+    <div class="grid-card bg-yellow" (click)="goToExercises('hips')">
+      <img src="assets/Gifs/hips.gif" class="medical-gif">
+      <span>HIPS</span>
+    </div>
+
+    <div class="grid-card bg-light-yellow" (click)="goToExercises('hand')">
+      <img src="assets/Gifs/hand.gif" class="medical-gif">
+      <span>WRIST / HAND</span>
+    </div>
+
+    <div class="grid-card bg-light-blue" (click)="goToExercises('knee')">
+      <img src="assets/Gifs/knee.gif" class="medical-gif">
+      <span>KNEE</span>
+    </div>
+
+    <div class="grid-card bg-teal" (click)="goToExercises('ankle')">
+      <img src="assets/Gifs/ankle.gif" class="medical-gif">
+      <span>ANKLE / FOOT</span>
+    </div>
+
+    <div class="grid-card bg-white" (click)="goToExercises('all')">
+      <img src="assets/Gifs/human-body.gif" class="medical-gif">
+      <span>OTHER / ALL</span>
+    </div>
+  </div>
+</ion-content>

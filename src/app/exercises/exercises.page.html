@@ -1,0 +1,46 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button 
+        defaultHref="/tabs/tab1" 
+        text="" 
+        icon="chevron-back-outline"
+        class="custom-back-btn">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ selectedPart | uppercase }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="custom-bg">
+  <div class="header-banner">
+    <h2>Available Routine</h2>
+    <p>Watch and follow the instructions below</p>
+  </div>
+
+  <div class="exercise-list">
+    <div *ngFor="let ex of filteredExercises" class="video-card">
+      <div class="video-container">
+        <iframe 
+          [src]="getSafeUrl(ex.videoId)" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      
+      <div class="video-details">
+        <h4>{{ ex.name }}</h4>
+        <div class="meta-info">
+          <span><ion-icon name="time-outline"></ion-icon> {{ ex.duration }}</span>
+          <span><ion-icon name="flash-outline"></ion-icon> {{ ex.level }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="filteredExercises.length === 0" class="empty-state">
+      <ion-icon name="play-circle-outline"></ion-icon>
+      <p>More videos for {{ selectedPart }} are coming soon!</p>
+    </div>
+  </div>
+</ion-content>

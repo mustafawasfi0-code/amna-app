@@ -1,0 +1,107 @@
+.custom-bg {
+  --background: #f8faff;
+}
+
+.header-container {
+  padding: 40px 20px 20px;
+  background: white;
+  border-radius: 0 0 35px 35px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+
+  .main-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #1a3a5a;
+    margin-bottom: 20px;
+  }
+}
+
+.stats-card {
+  background: linear-gradient(135deg, #2d5a61, #4a8b94);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+
+  .stat-item {
+    text-align: center;
+    .stat-value {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+  }
+
+  .stat-divider {
+    width: 1px;
+    height: 30px;
+    background: rgba(255,255,255,0.2);
+  }
+}
+
+.section-title {
+  padding: 25px 20px 10px;
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+}
+
+.exercise-list {
+  padding: 10px 20px;
+
+  .exercise-card {
+    background: white;
+    border-radius: 20px;
+    padding: 18px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    transition: 0.2s;
+
+    &:active { transform: scale(0.97); }
+
+    .exercise-info {
+      h4 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #1a3a5a;
+      }
+      p {
+        margin: 4px 0 0;
+        font-size: 0.85rem;
+        color: #95a5a6;
+      }
+    }
+
+    .status-icon {
+      font-size: 24px;
+    }
+
+    &.done {
+      border-left: 5px solid #2ecc71;
+      .status-icon { color: #2ecc71; }
+    }
+
+    &.active {
+      border-left: 5px solid #3498db;
+      background: #f0f7ff;
+      .status-icon { color: #3498db; }
+    }
+
+    &.pending {
+      border-left: 5px solid #bdc3c7;
+      .status-icon { color: #bdc3c7; }
+    }
+  }
+}
